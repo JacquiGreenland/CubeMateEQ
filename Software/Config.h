@@ -68,11 +68,11 @@
 #define AXIS1_LIMIT_SYNC              OFF //    OFF, n. Where n= 0..90 (degrees.) Allow sync/reset only within this +/-range. Option
 
 #define AXIS1_DRIVER_MICROSTEPS       16 //    OFF, n. Microstep mode when tracking.                                        <-Req'd
-#define AXIS1_DRIVER_MICROSTEPS_GOTO  OFF //    OFF, n. Microstep mode used during slews. OFF uses _DRIVER_MICROSTEPS.        Option
+#define AXIS1_DRIVER_MICROSTEPS_GOTO  4 //    OFF, n. Microstep mode used during slews. OFF uses _DRIVER_MICROSTEPS.        Option
 
 // for TMC2130, TMC5160, TMC2209, TMC2226 STEP/DIR driver models:
 #define AXIS1_DRIVER_IHOLD            500 //    OFF, n, (mA.) Current during standstill. OFF uses IRUN/2.0                    Option
-#define AXIS1_DRIVER_IRUN             650 //    OFF, n, (mA.) Current during tracking, appropriate for stepper/driver/etc.    Option
+#define AXIS1_DRIVER_IRUN             775 //    OFF, n, (mA.) Current during tracking, appropriate for stepper/driver/etc.    Option
 #define AXIS1_DRIVER_IGOTO            800 //    OFF, n, (mA.) Current during slews. OFF uses IRUN.                            Option
 // /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
 
@@ -104,11 +104,11 @@
 #define AXIS2_LIMIT_SYNC              OFF //    OFF, n. Where n= 0..90 (degrees.) Allow sync/reset only within this +/-range. Option
 
 #define AXIS2_DRIVER_MICROSTEPS       16 //    OFF, n. Microstep mode when tracking.                                        <-Req'd
-#define AXIS2_DRIVER_MICROSTEPS_GOTO  OFF //    OFF, n. Microstep mode used during slews. OFF uses _DRIVER_MICROSTEPS.        Option
+#define AXIS2_DRIVER_MICROSTEPS_GOTO  4 //    OFF, n. Microstep mode used during slews. OFF uses _DRIVER_MICROSTEPS.        Option
 
 // for TMC2130, TMC5160, TMC2209, TMC2226 STEP/DIR driver models:
 #define AXIS2_DRIVER_IHOLD            500 //    OFF, n, (mA.) Current during standstill. OFF uses IRUN/2.0                    Option
-#define AXIS2_DRIVER_IRUN             650 //    OFF, n, (mA.) Current during tracking, appropriate for stepper/driver/etc.    Option
+#define AXIS2_DRIVER_IRUN             775 //    OFF, n, (mA.) Current during tracking, appropriate for stepper/driver/etc.    Option
 #define AXIS2_DRIVER_IGOTO            800 //    OFF, n, (mA.) Current during slews. OFF uses IRUN.                            Option
 // /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /
 
