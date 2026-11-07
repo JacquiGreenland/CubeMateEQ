@@ -129,13 +129,13 @@ The testing has demonstrated not only good short-duration guiding performance, b
 
 ### Sustained guiding performance
 
-With the approximately 6 kg MK127 imaging payload, the mount has achieved total guiding RMS values typically in the region of 1.2–1.6 arcseconds during established imaging sessions, with better results under favourable conditions.
+With the approximately 6 kg MK127 imaging payload, the mount has achieved total guiding RMS values typically in the region of 1.0 - 1.2 arcseconds during established imaging sessions, with better results under favourable conditions and higher declination targets.  Many of the test targets we started very low to the southern horizon where guiding had to occur through substantial atmosphere and the guiding steadily improved as the target rose higher in the sky.
 
-A particularly successful session in Bristol on 16–17 October 2026 produced approximately **0.85 arcseconds total RMS across more than four hours of guiding**, with the RA and DEC axes averaging approximately 0.63 and 0.57 arcseconds RMS respectively.
+A particularly successful session in Bristol on 16–17 October 2026 produced approximately **0.85 arcseconds total RMS across more than four hours of guiding**, with the RA and DEC axes averaging approximately 0.63 and 0.57 arcseconds RMS respectively.  This was under excellent seeing conditions although in a light polluted bortle 7 area.
 
 This is a significant development from the initial testing, where sub-arcsecond results had principally been demonstrated over individual exposures or relatively short periods.
 
-Field sessions in Cyprus and Crete have provided further evidence of reliable guided tracking with the heavier optical configuration, generally achieving results around 1.4 arcseconds RMS under favourable conditions.
+Field sessions in Cyprus and Crete have provided further evidence of reliable guided tracking with the heavier optical configuration.
 
 ### Long-focal-length imaging
 
