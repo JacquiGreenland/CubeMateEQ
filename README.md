@@ -14,19 +14,19 @@ CubeMateEQ is intended as an **open hardware engineering project**, not a commer
 
 ## Project status
 
-CubeMateEQ is currently at a **field-validated prototype / open-hardware release** stage.
+CubeMateEQ is currently at the **field-validated / open-hardware release** stage.
 
 The current design has:
 
 - been fully assembled in CNC-machined aluminium;
-- been tested in both lightweight and higher-load configurations;
+- been tested in both lightweight and higher-load configurations across multiple extended sessions at different lattitudes;
 - demonstrated sustained guided astrophotography at approximately 975 mm focal length;
 - demonstrated sub-arcsecond guiding for sustained periods;
 - successfully produced long guided exposures (10 min) without meaningful exposure-time-dependent star elongation;
 - been tested with OnStepX using an ESP32-S3-based controller on a custom PCB;
-- been prepared for travel use as a practical hold-luggage astrophotography mount for heavier payloads.
+- been field-validated as a practical hold-luggage astrophotography mount for heavier payloads.
 
-The design is functionally complete, although there are still areas of refinement and experimentation, particularly around firmware behaviour, slew microstepping, mount limits, and future mechanical improvements.
+The design is functionally complete, although there are still areas of refinement and experimentation, particularly around mount limits and future mechanical improvements.
 
 ---
 
@@ -121,35 +121,39 @@ The repository includes CubeMateEQ-specific configuration material and the custo
 
 ---
 
-## Proven astrophotography performance
+## Field-tested astrophotography performance
 
-CubeMateEQ has been tested using several imaging configurations.  All of these tests were performed in suburban Bristol and not under pristine dark skies.
+CubeMateEQ has moved beyond initial prototype testing and has now been used for extended astrophotography sessions in the UK, Cyprus, and Crete. These deployments have included both lightweight wide-field imaging equipment and a substantially heavier long-focal-length telescope configuration.
 
-### ~180 mm imaging
+The testing has demonstrated not only good short-duration guiding performance, but also the ability to maintain stable tracking over multiple hours, including repeated sessions at approximately 1,000 mm focal length.
 
-With a lightweight imaging payload consisting of a ZWO ASI585MC Air and a Nikon 180 mm prime lens, using the custom wedge and an EQ5 tripod, CubeMateEQ has demonstrated sustained sub-arcsecond guiding.
+### Sustained guiding performance
 
-### ~975 mm imaging
+With the approximately 6 kg MK127 imaging payload, the mount has achieved total guiding RMS values typically in the region of 1.2–1.6 arcseconds during established imaging sessions, with better results under favourable conditions.
 
-The mount was also tested with a substantially more demanding imaging train consisting of an SVBONY MK127 using its supplied focal reducer giving approximately **975 mm focal length** paired with an Altair filter wheel, an Altair 585MM camera, and a ZWO off-axis guider with a QHY5L-II-M guide camera, along with a stepper motor, bracket, and a DIY Moonlite-compatible focuser, in conjunction with the custom wedge and an EQ5 tripod.  This payload is approximately 6 kg in total - a 1.9 kg counterweight was used.
+A particularly successful session in Bristol on 16–17 October 2026 produced approximately **0.85 arcseconds total RMS across more than four hours of guiding**, with the RA and DEC axes averaging approximately 0.63 and 0.57 arcseconds RMS respectively.
 
-Representative results with this payload included:
+This is a significant development from the initial testing, where sub-arcsecond results had principally been demonstrated over individual exposures or relatively short periods.
 
-- mature guiding around **1.2–1.4 arcsec RMS** near the celestial equator;
-  - approximately **0.88 arcsec RMS** during a 240-second exposure;
-  - approximately **1.15 arcsec RMS** during a 300-second exposure;
+Field sessions in Cyprus and Crete have provided further evidence of reliable guided tracking with the heavier optical configuration, generally achieving results around 1.4 arcseconds RMS under favourable conditions.
 
-- sustained sub-arcsecond intervals imaging a more favourable high-declination target (C4);
-  - approximately **0.59 arcsec RMS** during a 300-second exposure;
-  - approximately **0.85 arcsec RMS** during a 600-second exposure.
+### Long-focal-length imaging
 
-Matched-star analysis showed no meaningful increase, or variation, in star elongation across exposure durations from 1 to 10 minutes.
+The principal higher-load test configuration comprises an SVBONY MK127 Maksutov-Cassegrain telescope, operating at approximately 975 mm focal length with its reducer, together with a monochrome imaging camera, filter wheel, off-axis guider, guide camera, and motorised focuser.
 
-These results are included as engineering validation rather than guaranteed performance. Guiding performance depends heavily on seeing, payload, balance, polar alignment, guiding configuration, optical geometry, tripod stiffness, wind, and individual strain-wave drive characteristics.
+The complete optical payload weighs approximately **6 kg**, supported using a **1.9 kg** counterweight. The testing has been performed using the prototype custom equatorial wedge and an EQ5 tripod.
 
----
+The mount has successfully supported guided exposures of up to 600 seconds with this configuration. Matched-star analysis of test exposures from 60 to 600 seconds found no meaningful increase in star elongation attributable to exposure duration.
 
-## Periodic error and guiding
+The combination of sustained guiding accuracy and successful long exposures demonstrates that the current Type 14 strain-wave-drive design is capable of practical long-focal-length deep-sky astrophotography.
+
+### Lightweight imaging
+
+CubeMateEQ has also been tested with a Nikon 180 mm lens and ZWO ASI585MC Air camera, demonstrating sustained sub-arcsecond guiding with a much lighter imaging payload.
+
+These tests demonstrate the mount's suitability for both wide-field and longer-focal-length imaging without requiring a fundamentally different mechanical or electronic configuration.
+
+### Periodic error and guiding
 
 As expected for an inexpensive commodity strain-wave gearbox, the RA axis exhibits periodic error.
 
@@ -159,20 +163,28 @@ PHD2 Predictive PEC (PPEC) materially improves RA guiding once the period is lea
 
 Different gearboxes will almost certainly exhibit different periodic error. Because CubeMateEQ is designed around off-the-shelf components this variability is treated as something to accommodate through guiding rather than eliminate through individual selection of expensive high-precision components.
 
----
-
-## Payload
+### Payload validation
 
 CubeMateEQ does not use a single absolute payload rating because useful payload depends on the application, counterweights, distance of the payload from the centre of rotation, and many other factors.
 
 As a practical guide:
 
-- **5–6 kg without counterweight** is a realistic upper limit for luggable-use;
+- **5 kg without counterweight** is a realistic upper limit for luggable-use;
+- **6kg with a 1.9kg counterweight** has been fully validated for longer focal ranges and is a demonstrated operational capability, rather than a theoretical torque calculation;
 - around **10 kg** is a sensible design target for the current luggable configuration with appropriate counterweights;
-- larger loads may be possible with a combination of counterweighting and careful setup;
-- future Type 17 or larger strain-wave-drive variants could increase the available torque substantially.
+- A payload of approximately 10 kg remains a design objective for the present configuration with suitable counterweighting, but has not yet undergone equivalent long-duration imaging validation;
+
+Future Type 17 or larger strain-wave-drive variants could increase the available torque substantially,  currently this requires new RA and DEC mounting plates but no other mechanical changes.  The intention is to move to a universal plate design.
 
 For astrophotography, guiding performance is a more useful measure than whether the mount can simply carry a given mass.
+
+### Interpretation of results
+
+These measurements describe the performance of the complete guided imaging system, rather than the intrinsic unguided tracking accuracy of the mount.
+
+Guiding results depend on seeing, target position, polar alignment, imaging geometry, guiding configuration, wind, and the characteristics of individual strain-wave drives.
+
+The objective of CubeMateEQ is not to eliminate every mechanical tracking error through expensive precision components, but to demonstrate that inexpensive, readily available components can form a practical, high-performing guided astrophotography mount.
 
 ---
 
