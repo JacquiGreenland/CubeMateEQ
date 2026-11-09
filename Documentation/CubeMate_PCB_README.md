@@ -106,7 +106,7 @@ Driver addressing and the corresponding GPIO assignment are defined by the OnSte
 
 ## Stepper motor connectors
 
-Each axis uses a **4-pin JST-XH connector** wired directly to its TMC2209 motor outputs.
+Each axis uses a **4-pin JST-XH connector** wired directly to its TMC2209 motor outputs.  These connecters are a pig to crimp unless you have specialised tools and even then are a pain in the proverbial.  If you can get pre-terminated Steppers then do that, the pins are easy to swap around if needed.  Alternatively I recommend acquiring pre-terminated pigtails and then soldering them to the existing wires and covering with heatshrink, it will save you time and frustration!
 
 ### Motor plug pin order
 
