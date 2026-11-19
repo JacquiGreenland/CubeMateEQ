@@ -246,6 +246,8 @@ At the time of writing the CNC aluminium parts and the PCB for the reference mod
 
 A suitable EQ wedge can cost less than **USD $100** direct from China and I'm not sure I can come up with a design that will be cheaper than this so the focus will be capability rather than price.  I am using a ZWO counterweight bar with Skywatcher weights but so long as the bar has an M12 thread anything is usable.
 
+It is worth noting that the Vixen mounting plate accounts for $40 worth of machined aluminium - a custom baseplate to attach to your chosen wedge is a lot cheaper but a lot of wedges have different mounting arrangements so the mounting plate is the easier option right now.
+
 Repeat builds may vary significantly depending on supplier and location. Supply chain status and availability of materials will also impact spot pricing.
 
 ---
