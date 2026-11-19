@@ -19,7 +19,7 @@ CubeMateEQ is currently at the **field-validated / open-hardware release** stage
 The current design has:
 
 - been fully assembled in CNC-machined aluminium;
-- been tested in both lightweight and higher-load configurations across multiple extended sessions at different lattitudes;
+- been tested in both lightweight and higher-load configurations across multiple extended sessions at different latitudes;
 - demonstrated sustained guided astrophotography at approximately 975 mm focal length;
 - demonstrated sub-arcsecond guiding for sustained periods;
 - successfully produced long guided exposures (10 min) without meaningful exposure-time-dependent star elongation;
@@ -236,12 +236,15 @@ The current reference model was built for approximately **USD $500** although pr
 This figure is indicative only and excludes:
 
 - tripod / pier / wedge;
+- Counterweight shafts and counterweights
 - variations in local pricing.
 - shipping costs;
 - import taxes;
 
 
-At the time of writing the CNC aluminium parts and the PCB for the reference model cost approximately **USD $240**. The Type 14 strain-wave gearboxes can be sourced for as little as **USD $100 each** from Aliexpress. The stepper motors are sourced from StepperOnline for **USD $14 each**.  Ancillary parts, including the electronics, can be sourced from amazon for These two expenditures account for the bulk of the build cost, most of the rest of the items can be sourced from Amazon for about **USD $100** total.
+At the time of writing the CNC aluminium parts and the PCB for the reference model cost approximately **USD $260**. The Type 14 strain-wave gearboxes can be sourced for as little as **USD $70 each** from Aliexpress (obviously quality can vary with price but we're talking about clone units anyway). The stepper motors are sourced from StepperOnline for **USD $11 each**.  Ancillary parts, including the electronic components, can be sourced from amazon for about **USD $100** total.  Then you just need to get the PCB produced in your preferred manner.
+
+A suitable EQ wedge can cost less than **USD $100** direct from China and I'm not sure I can come up with a design that will be cheaper than this so the focus will be capability rather than price.  I am using a ZWO counterweight bar with Skywatcher weights but so long as the bar has an M12 thread anything is usable.
 
 Repeat builds may vary significantly depending on supplier and location. Supply chain status and availability of materials will also impact spot pricing.
 
